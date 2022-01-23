@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-}
-
-.sidebar {
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évszakok</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+        background-color: rgb(235, 235, 235);
+        font-family: 'Ubuntu', sans-serif;
+           font-size: 16px;
+        
+        
+        }
+         .sidebar 
+                   {
   margin: 0;
   padding: 0;
   width: 200px;
@@ -16,69 +23,84 @@ body {
   position: fixed;
   height: 100%;
   overflow: auto;
-}
-
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
- 
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-</style>
+                   }
+                   
+                   .sidebar a 
+                   {
+                       display: block;
+                       color: black;
+                       padding: 16px;
+                       text-decoration: none;
+                   }
+                   
+                   .sidebar a.active 
+                   {
+                    background-color: #04AA6D;
+                       color: white;
+                   }
+                   
+                   .sidebar a:hover:not(.active) 
+                   {
+                       background-color: #555;
+                       color: white;
+                   }
+                   
+                   div.content 
+                   {
+                       margin-left: 200px;
+                       padding: 1px 16px;
+                       height: 1000px;
+                   }
+                   
+                   @media screen and (max-width: 700px) 
+                   {
+                       .sidebar 
+                       {
+                       width: 100%;
+                       height: auto;
+                       position: relative;
+                       }
+                       .sidebar a {float: left;}
+                       div.content {margin-left: 0;}
+                   }
+                   
+                   @media screen and (max-width: 400px) 
+                   {
+                       .sidebar a 
+                       {
+                       text-align: center;
+                       float: none;
+                       }
+                   }
+                 </style>
 </head>
-<body style="background-color:powderblue;"></body>
-
-<div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="https://martin070106.github.io/collage/listak.html">Listak</a>
-  <a href="https://martin070106.github.io/collage/orarend.html">Orarend</a>
-  <a href="https://martin070106.github.io/collage/keplink.html">Keplink</a>
-  
-</div>
-
-<div class="content">
-    <h2 style="color:blue;">Kamecz Martin</h2>
-    <h3 style="color:red;">Kamecz Martin</h3>
-    <h4 style="color:yellow;">Kamecz Martin</h4>
-  <p>Ezek az oldalaim.</p>
-
-  <li><a href=" https://martin070106.github.io/collage/orarend.html">Orarend</a></li>
-   <li><a href=" https://martin070106.github.io/collage/listak.html">Listak</a></li>
-   <li><a href=" https://martin070106.github.io/collage/keplink.html">Keplink</a></li>
-</div>
-
+<body>
+    <div class="sidebar">
+      <a class="active" href="#home">Home</a>
+        <a href="https://martin070106.github.io/collage/keplink.html" target="blank">KÉPLINK</a>|
+        <a href="https://martin070106.github.io/collage/listak.html" target="blank">Listak</a>|
+        <a href="https://martin070106.github.io/collage/orarend.html" target="blank">ÓRAREND</a>|
+        <a href="https://martin070106.github.io/collage/evszakok.html"target="blank">ÉVSZAKOK</a>|
+       </div>
+    <div class="content">
+      <div class="box2">
+        <img src="tavaszkep.jpg" alt="tavasz" height="300px" width="300px">
+        <p id="center">Tavasz</p>
+        </div>
+        <div class="box2">
+          <img src="nyarkep.jpg" alt="nyar" height="300px" width="300px">
+          <p id="center">Nyár</p>
+        </div>
+            <div class="box2">
+                <img src="oszkep.jpg" alt="osz" height="300px" width="300px">
+                <p id="center">Ősz</p>
+            </div>
+            
+                <div class="box2">
+                  <img src="telkep.jpg" alt="tel" height="300px" width="300px">
+                  <p id="center">Tél</p>
+        </div>
+    </div>
+    
 </body>
 </html>
