@@ -2,62 +2,66 @@
 <html>
   <head>
     <title>Első weboldalam</title>
-    <style>
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-}
-
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
- 
-.sidebar a.active {
-  background-color: bisque;
-  color: rgb(66, 38, 38);
-}
-
-.sidebar a:hover:not(.active) {
-  background-color:bisque;
-  color: white;
-}
-
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-</style>
+    <style> 
+        .sidebar 
+                  {
+ margin: 0;
+ padding: 0;
+ width: 200px;
+ background-color: #f1f1f1;
+ position: fixed;
+ height: 100%;
+ overflow: auto;
+                  }
+                  
+                  .sidebar a 
+                  {
+                      display: block;
+                      color: black;
+                      padding: 16px;
+                      text-decoration: none;
+                  }
+                  
+                  .sidebar a.active 
+                  {
+                   background-color: #04AA6D;
+                      color: white;
+                  }
+                  
+                  .sidebar a:hover:not(.active) 
+                  {
+                      background-color: #555;
+                      color: white;
+                  }
+                  
+                  div.content 
+                  {
+                      margin-left: 200px;
+                      padding: 1px 16px;
+                      height: 1000px;
+                  }
+                  
+                  @media screen and (max-width: 700px) 
+                  {
+                      .sidebar 
+                      {
+                      width: 100%;
+                      height: auto;
+                      position: relative;
+                      }
+                      .sidebar a {float: left;}
+                      div.content {margin-left: 0;}
+                  }
+                  
+                  @media screen and (max-width: 400px) 
+                  {
+                      .sidebar a 
+                      {
+                      text-align: center;
+                      float: none;
+                      }
+                  }
+                </style>
 
   </head>
   <body>
@@ -78,6 +82,6 @@ div.content {
     <p>2. feladat<a href="https://martin070106.github.io/collage/listak.html" target="blank">LISTÁK</a></p>
     <p>3. feladat<a href="https://martin070106.github.io/collage/orarend.html" target="blank">ÓRAREND</a></p>
     <p style="color:red;">Kamecz Martin</p>
-    <img src="<div>Collage made with <a href="https://www.fotojet.com/">FotoJet</a></div>" alt="kollázs" title="kollázs" width=500>
+    <img src="FotoJet.jpg"> alt="kollázs" title="kollázs" width=500></img>
   </body>  
 </html>
