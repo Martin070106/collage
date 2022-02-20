@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <input type="text" id="colorinputText">
+<input type="color" id="colorinputColor">
+<input type="button" id="colorButton" value="Kattints más színért."onclick="changeColor()">
+<script>
+    function changeColor(){
+        let color = document.getElementById("colorInputColor").value;
+        document.body.style.backgroundColor = color;
+        document.getElementById("colorInputText").value = color;
+    }
+</script>
+
+
+<form>
+    
+    <label for="lname">keresztnév:</label><br>
+  <input type="text" id="lname" name="lname" value="Martin"><br>
+  <label for="fname">vezetéknév:</label><br>
+  <input type="text" id="fname" name="fname" value="Kamecz"><br>
+  <input type='text' name="email" placeholder="Írd ide az emailedet"><br>
+  <input type="text" name='password'placeholder="Írj ide egy jelszót">
+
+  <input type='radio' name='gender'> fiú
+<input type='radio' name='gender'> lány<br>
+<textarea name="szöveg" placeholder="Írj egy üzenetet!"></textarea>
+<select name="car">
+<option value="car1">Ford</option>
+<option value="car2">Opel</option>
+<option value="car3">Mercedes</option>
+
+</select>
+<input type='submit'>
+</form>
+
+</body>
+</html>
