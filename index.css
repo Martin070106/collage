@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+margin: 0;
+padding: 0;
+text-align: center;
+}
+p{
+margin: 0;
+padding: 0px 50px;
+font-size: 18px;
+text-align: justify;
+}
+
+.inner-footer{
+margin: 0;
+padding: 0;
+background-color:gray;
+}
+.social-links{
+    display: flex;
+}
+.social-links ul{
+display: flex;
+}
+
+.social-items{
+    list-style: none;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6ccc6c
+}
